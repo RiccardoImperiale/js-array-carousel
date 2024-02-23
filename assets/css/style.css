@@ -86,13 +86,10 @@ body {
             >img:not(.activeImg) {
                 filter: brightness(0.3);
             }
+        }
 
+        .thumbnail.activeThumb {
+            border: 2px solid rgb(255, 255, 255);
         }
     }
-
 }
-
-/* .thumbnail.activeThumb {
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 1rem;
-} */

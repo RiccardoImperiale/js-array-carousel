@@ -17,7 +17,7 @@ for (let i = 0; i < slides.length; i++) {
     const slide = slides[i];
     const imageMarkup = `<img class="${i === activeImage && 'active'}" src="./assets/img/${slide}" alt="superhero image">`
     const thumbMarkup = `
-    <div class="thumbnail">
+    <div class="thumbnail ${i === activeImage && 'activeThumb'}">
     <img class="${i === activeImage && 'activeImg'}" src="./assets/img/${slide}" alt="thumbnail image">
     </div>`;
 
@@ -41,10 +41,14 @@ prevBtn.addEventListener('click', () => {
 function toggleActiveClass() {
     const currentImage = document.querySelector('.active')
     const currentThumb = document.querySelector('.activeImg')
+    const currentThumbContainer = document.querySelector('.activeThumb')
     currentImage.classList.remove('active')
     currentThumb.classList.remove('activeImg')
+    currentThumbContainer.classList.remove('activeThumb')
     const allImages = document.querySelectorAll('.slides img')
     const allThumbs = document.querySelectorAll('.thumbnail img')
+    const allThumbsContainer = document.querySelectorAll('.thumbnail')
     allImages[activeImage].classList.add('active')
     allThumbs[activeImage].classList.add('activeImg')
+    allThumbsContainer[activeImage].classList.add('activeThumb')
 }
