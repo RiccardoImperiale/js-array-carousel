@@ -16,25 +16,34 @@ body {
     overflow: hidden;
     max-width: 1000px;
     margin: auto;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
+    position: relative;
 
     .slides {
         >img {
             max-width: 100%;
         }
-
         >img:not(.active) {
             display: none;
         }
     }
 
+    .wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .controls {
         height: 100%;
-        position: absolute;
+        z-index: 1;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -51,6 +60,26 @@ body {
             margin: .75rem 0;
             padding: .5rem;
             cursor: pointer;
+        }
+    }
+
+    .thumbnails {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+
+        .thumbnail {
+            overflow: hidden;
+            height: calc(100% / 5);
+            display: flex;
+            align-items: center;
+
+            & img {
+                display: flex;
+                max-width: 100%;
+            }
         }
     }
 }
