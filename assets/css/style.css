@@ -33,9 +33,10 @@ body {
     }
 
     .controls {
-        width: 100%;
+        height: 100%;
         position: absolute;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
 
         & button {
@@ -47,7 +48,7 @@ body {
             align-items: center;
             aspect-ratio: 1;
             border-radius: 50%;
-            margin: 0 .75rem;
+            margin: .75rem 0;
             padding: .5rem;
             cursor: pointer;
         }
