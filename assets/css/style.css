@@ -12,17 +12,18 @@ body {
 
 .slider {
     width: 80%;
-    height: 373px;
     overflow: hidden;
     max-width: 1000px;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 1rem;
     position: relative;
 
     .slides {
+        display: flex;
+        align-items: center;
+        height: 370px;
+        background-color: aqua;
+
         >img {
             max-width: 100%;
         }
@@ -38,8 +39,12 @@ body {
         right: 0;
         width: 200px;
         height: 100%;
-        display: flex;
         justify-content: center;
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .25s;
+
     }
 
     .controls {
@@ -50,7 +55,7 @@ body {
         justify-content: space-between;
 
         & button {
-            background-color: rgba(0, 0, 0, 0.316);
+            background-color: rgba(221, 221, 221, 0.316);
             border: none;
             color: white;
             display: flex;
@@ -91,5 +96,12 @@ body {
         .thumbnail.activeThumb {
             border: 2px solid rgb(255, 255, 255);
         }
+    }
+}
+
+.slider:hover {
+    .wrapper {
+        opacity: 1;
+        visibility: visible;
     }
 }
