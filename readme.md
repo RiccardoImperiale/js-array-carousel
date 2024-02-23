@@ -5,7 +5,7 @@ Given an array containing a list of five images, create a carousel as in the att
 First, let's create the static markup: we build the container and insert a large image in the center: this way we will have the basic structure and styles ready to then be able to focus only on the logical aspect.
 
 ## MILESTONE 2
- Adesso rimuoviamo tutto il markup statico e inseriamo tutte le immagini dinamicamente servendoci dell'array fornito e un semplice ciclo for che concatena un template literal. Tutte le immagini saranno nascoste, tranne la prima, che avrà una classe specifica che la renderà visibile. Al termine di questa fase ci ritroveremo con lo stesso slider stilato nella milestone 1, ma costruito dinamicamente attraverso JavaScript.
+Now let's remove all the static markup and insert all the images dynamically using the provided array and a simple for loop that concatenates a template literal. All images will be hidden, except the first, which will have a specific class that will make it visible. At the end of this phase we will find ourselves with the same slider drawn up in milestone 1, but built dynamically through JavaScript.
 
 ## MILESTONE 3
 Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.

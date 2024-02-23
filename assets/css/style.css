@@ -27,10 +27,9 @@ body {
             max-width: 100%;
         }
 
-        /* 
         >img:not(.active) {
             display: none;
-        } */
+        }
     }
 
     .controls {
