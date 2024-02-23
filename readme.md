@@ -12,7 +12,7 @@ When the user clicks on the arrows, the program will change the active image, wh
 
 
 ### BONUS 1:
-Aggiungere il ciclo infinito del carosello. Ovvero se è attiva la prima immagine e l'utente clicca la freccia per andare all’immagine precedente, dovrà comparire l’ultima immagine dell’array e viceversa.
+Add the infinite carousel loop. That is, if the first image is active and the user clicks the arrow to go to the previous image, the last image in the array must appear and vice versa.
 
 ### BONUS 2:
-Aggiungere la visualizzazione di tutte le thumbnails sulla destra dell’immagine grande attiva, come nello screenshot proposto. Tutte le miniature avranno un layer di opacità scura, tranne quella corrispondente all’immagine attiva, che invece avrà un bordo colorato. Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di miniatura attiva.
+Display all the thumbnails to the right of the active large image, as in the proposed screenshot. All thumbnails will have a dark opacity layer, except the one corresponding to the active image, which will instead have a colored border. By clicking the arrows, in addition to changing the active image, you can manage the change of the active thumbnail.

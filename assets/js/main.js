@@ -23,7 +23,6 @@ for (let i = 0; i < slides.length; i++) {
 
     slidesElement.insertAdjacentHTML('beforeend', imageMarkup)
     thumbsElement.insertAdjacentHTML('beforeend', thumbMarkup)
-
 }
 
 nextBtn.addEventListener('click', () => {
