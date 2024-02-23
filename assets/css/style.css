@@ -26,6 +26,7 @@ body {
         >img {
             max-width: 100%;
         }
+
         >img:not(.active) {
             display: none;
         }
@@ -75,11 +76,23 @@ body {
             height: calc(100% / 5);
             display: flex;
             align-items: center;
+            max-width: 100%;
 
             & img {
-                display: flex;
                 max-width: 100%;
+                position: relative;
             }
+
+            >img:not(.activeImg) {
+                filter: brightness(0.3);
+            }
+
         }
     }
+
 }
+
+/* .thumbnail.activeThumb {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+} */
